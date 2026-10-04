@@ -1,0 +1,13 @@
+from pathlib import Path
+
+ics = """BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Pouyan Ghorbanali//Persian Calendar//FA
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pouyan Ghorbanali
+X-WR-CALDESC:تقویم فارسی (شمسی)
+END:VCALENDAR
+"""
+path = Path("/mnt/data/Pouyan-Ghorbanali-Persian-Calendar.ics")
+path.write_text(ics, encoding="utf-8")
+print(path)
